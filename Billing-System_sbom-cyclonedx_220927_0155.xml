@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<bom xmlns="http://cyclonedx.org/schema/bom/1.3" serialNumber="urn:uuid:5E7D5623-34D8-441F-A632-C9F0AED2B0C5" version="1">  
+  <metadata> 
+    <timestamp>2022-09-26T16:55:27Z</timestamp>  
+    <tools> 
+      <tool> 
+        <vendor>LABRADOR LABS.</vendor>  
+        <name>Labrador</name>  
+        <version>v2.1.1</version> 
+      </tool> 
+    </tools>  
+    <authors> 
+      <author> 
+        <name>Labrador</name>  
+        <email>contact@labradorlabs.ai</email>  
+        <phone>+82-2-921-0419</phone> 
+      </author> 
+    </authors>  
+    <component type="application" bom-ref="root"> 
+      <name>Billing-System</name> 
+    </component> 
+  </metadata>  
+  <components> 
+    <component type="library" bom-ref="pkg:MAVEN/com.jgoodies/jgoodies-forms@1.8.0"> 
+      <group>com.jgoodies</group>  
+      <name>jgoodies-forms</name>  
+      <version>1.8.0</version>  
+      <licenses> 
+        <license> 
+          <id>BSD Zero Clause License</id>  
+          <url>https://spdx.org/licenses/0BSD.html</url> 
+        </license> 
+      </licenses> 
+    </component>  
+    <component type="file" bom-ref="4e86af15-5ef7-413f-8a46-b6d160caf94b"> 
+      <name>Billing System.jar</name> 
+    </component>  
+    <component type="file" bom-ref="039f1157-57cf-4146-9009-65a840dff7ce"> 
+      <name>jgoodies-forms-1.8.0-sources.jar</name> 
+    </component> 
+  </components>  
+  <dependencies> 
+    <dependency ref="pkg:MAVEN/com.jgoodies/jgoodies-forms@1.8.0"/>  
+    <dependency ref="4e86af15-5ef7-413f-8a46-b6d160caf94b"/>  
+    <dependency ref="039f1157-57cf-4146-9009-65a840dff7ce"/> 
+  </dependencies> 
+</bom>
